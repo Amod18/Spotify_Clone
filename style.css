@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+
+body {
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Lobster", "cursive";
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+  background-color: #141416;
+  color: whitesmoke;
+}
+
+nav ul li {
+  padding: 0px 13px;
+  font-size: 20px;
+}
+nav ul li:hover {
+  cursor: pointer;
+  font-size: 2rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.brand img {
+  width: 55px;
+}
+
+.container {
+  min-height: 75vh;
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 15px;
+  padding: 15px 25px;
+  background-image: url("bg.jpg");
+  background-size: 100% 100%;
+}
+
+.bottom {
+  position: sticky;
+  height: 100px;
+  background-color: #141416;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+#progressBar {
+  width: 80vw;
+  margin: 5px 120px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.songItemContainer {
+  margin-top: 20px;
+}
+.songItem {
+  height: 45px;
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding: 1px 8px;
+    margin: 10px 0px;
+}
+
+.songItem img {
+  width: 40px;
+  border-radius: 30px;
+}
+
+.timeStamp {
+  margin: 0px 12px;
+}
+
+.timeStamp i {
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-size: 25px;
+  margin-top: 20px;
+  color: whitesmoke;
+}
+
+.fas {
+  color: #b2b2b2
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
